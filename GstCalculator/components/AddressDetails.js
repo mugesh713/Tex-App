@@ -20,7 +20,7 @@ const AddressForm = () => {
   // Handle the form submission
   const handleSubmit = async () => {
     try {
-      const response = await fetch('http://192.168.39.254:5000/api/addresses', {
+      const response = await fetch('http://192.168.43.254:5000/api/addresses', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),

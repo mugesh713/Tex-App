@@ -46,6 +46,12 @@ export default function HomePage({ navigation }) {
           onPress={() => navigation.navigate('Excel Screen')}
         />
       </View>
+      <View style={styles.buttonContainer}>
+        <Button
+          title="Spinning Calculator"
+          onPress={() => navigation.navigate('Spinning Calculator')}
+        />
+      </View>
     </View>
   );
 }

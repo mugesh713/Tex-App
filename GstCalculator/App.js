@@ -9,6 +9,8 @@ import BillGenerator from './components/BillGenerator';
 import CottonPricePrediction from './components/CottonPricePrediction';
 import AboutTheLooms from './components/AboutTheLooms';
 import SavedBills from './components/SavedBills';
+import SpinningCalculator from './components/SpinningCalculator';
+
 
 const Stack = createStackNavigator();
 
@@ -24,6 +26,7 @@ export default function App() {
         <Stack.Screen name="About the Looms" component={AboutTheLooms} />
         <Stack.Screen name="Address List" component={AddressList} />
         <Stack.Screen name="Saved Bills" component={SavedBills} />
+         <Stack.Screen name="Spinning Calculator" component={SpinningCalculator} />
       </Stack.Navigator>
     </NavigationContainer>
   );

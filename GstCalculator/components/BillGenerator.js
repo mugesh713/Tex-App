@@ -103,7 +103,7 @@ export default function InvoiceGenerator() {
     const filePath = `${FileSystem.cacheDirectory}${fileName}.xlsx`;
     
     // Send the Excel file via email using the backend API
-    axios.post(`http://192.168.39.254:5000/api/send`, { email, filename: `${fileName}.xlsx`, file: file })
+    axios.post(`http://1192.168.43.254:5000/api/send`, { email, filename: `${fileName}.xlsx`, file: file })
       .then(res => console.log(res))
       .catch(err => console.log(err));
 
